@@ -1,0 +1,31 @@
+/**
+ * Theme Name:  Adoration
+ * Theme URI:   http://wpaxl.com/themes/adoration
+ * Description: Adoration is a super versatile theme offering deep integration with WooCommerce. With Hybrid Core as the underlying framework the theme brings a great mix of flexibility, functionality and usability.
+ * Version:     1.0.0
+ * Author:      Chris Aprea
+ * Author URI:  http://wpaxl.com
+ * Tags:        black,gray,one-column,two-columns,left-sidebar,right-sidebar,custom-background,custom-colors,custom-menu,featured-images,full-width-template,threaded-comments,translation-ready,responsive-layout
+ * Text Domain: adoration
+ * License:     GNU General Public License v2.0 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+@import "bourbon";
+@import "sass/variables-site/variables-site";
+@import "sass/mixins/mixins-master";
+@import "sass/reset";
+@import "sass/typography/typography";
+@import "sass/elements/elements";
+@import "sass/forms/forms";
+@import "sass/navigation/navigation";
+@import "sass/modules/accessibility";
+@import "sass/site/secondary/widgets";
+@import "sass/site/site";
+@import "sass/media/media";
+@import "sass/layout/layout";
+@import "sass/woocommerce/woocommerce";
+@import "sass/modules/homepage-sections";
+@import "sass/modules/cf7";
+@import "sass/modules/whistles";
+@import "sass/responsive";

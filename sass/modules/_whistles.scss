@@ -1,0 +1,118 @@
+$whistles-grey: #f9f9f9;
+
+.whistles {
+	clear: both;
+	width: 100%;
+	margin: 0 0 25px;
+
+	.whistle-content {
+		display: none;
+	}
+
+	.whistle-content > *:last-child {
+		margin: 0;
+	}
+
+	&.whistles-tabs {
+		ul {
+			list-style: none;
+			margin: 0;
+			clear: both;
+			display: block;
+
+			li {
+				display: inline;
+
+				a, a:visited {
+					background-color: $whistles-grey;
+					border: 1px solid #e3e3e3;
+					border-bottom-color: #fff;
+					padding: 15px 25px;
+					line-height: 1;
+					z-index: 1;
+					margin: 0 -1px 0 0;
+					display: inline-block;
+					font-weight: 600;
+					outline: 0;
+					color: #777;
+					opacity: 1;
+					@include font-size(1.8);
+
+					&:focus, &:hover {
+						border: 1px solid #e3e3e3;
+						border-bottom-color: #fff;
+						color: #999;
+					}
+				}
+
+				&[aria-selected=true] {
+					a, a:visited {
+						background-color: #fff;
+						z-index: 3;
+						color: #333;
+						cursor: default;
+					}
+				}
+
+				&:first-child a {
+					border-radius: 2px 0 0 0;
+				}
+
+				&:last-child a {
+					border-radius: 0 2px 0 0;
+				}
+			}
+		}
+
+		.whistles-tabs-wrap {
+			border: 1px solid #e3e3e3;
+			border-radius: 0px 2px 2px 2px;
+			position: relative;
+			top: -1px;
+			z-index: 2;
+			padding: 30px 25px;
+		}
+	}
+
+	&.whistles-toggle, &.whistles-accordion {
+		h3 {
+			letter-spacing: normal;
+			font-weight: 600;
+			color: #777;
+			cursor: pointer;
+			width: 100%;
+			background-color: $whistles-grey;
+			border: 1px solid #e3e3e3;
+			margin: 0 0 -1px 0;
+			padding: 15px 25px;
+			@include font-size(1.8);
+
+			&[aria-selected=true] {
+				color: #333;
+
+				&:after {
+					content: '\f106';
+				}
+			}
+
+			&:focus, &:hover {
+				color: #999;
+			}
+
+			&:after {
+				content: '\f107';
+				float: right;
+				padding: 3px 0 0 0;
+				@include font-awesome();
+			}
+		}
+
+		.whistle-content {
+			padding: 30px 25px;
+			border: 1px solid #e3e3e3;
+			border-radius: 0px 1px;
+			margin: 0 0 -1px 0;
+		}
+	}
+}
+

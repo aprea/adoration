@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'FontAwesome';
+
+	src: url('fonts/fontawesome/fontawesome-webfont.eot');
+	src: url('fonts/fontawesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/fontawesome/fontawesome-webfont.woff2') format('woff2'),
+		 url('fonts/fontawesome/fontawesome-webfont.woff') format('woff'),
+		 url('fonts/fontawesome/fontawesome-webfont.ttf')  format('truetype'),
+		 url('fonts/fontawesome/fontawesome-webfont.svg#svgFontName') format('svg');
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	color: $color__text-main;
+	font-family: $font__main;
+	@include font-size(2);
+	line-height: $font__line-height-body;
+	font-weight: $font__weight;
+}
+
+@import "headings";
+@import "copy";

@@ -1,0 +1,502 @@
+# Copyright (C) 2014 Chris Aprea
+# This file is distributed under the GNU General Public License v2.0 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Adoration 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/aprea/adoration/issues\n"
+"POT-Creation-Date: 2014-12-03 03:08:10+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"X-Generator: grunt-wp-i18n 0.4.9\n"
+
+#: 404.php:12
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:16
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the "
+"links below or a search?"
+msgstr ""
+
+#: archive.php:24
+msgid "Author: %s"
+msgstr ""
+
+#: archive.php:27
+msgid "Day: %s"
+msgstr ""
+
+#: archive.php:30
+msgid "Month: %s"
+msgstr ""
+
+#: archive.php:33
+msgid "Year: %s"
+msgstr ""
+
+#: archive.php:36
+msgid "Asides"
+msgstr ""
+
+#: archive.php:39
+msgid "Galleries"
+msgstr ""
+
+#: archive.php:42
+msgid "Images"
+msgstr ""
+
+#: archive.php:45
+msgid "Videos"
+msgstr ""
+
+#: archive.php:48
+msgid "Quotes"
+msgstr ""
+
+#: archive.php:51
+msgid "Links"
+msgstr ""
+
+#: archive.php:54
+msgid "Statuses"
+msgstr ""
+
+#: archive.php:57
+msgid "Audios"
+msgstr ""
+
+#: archive.php:60
+msgid "Chats"
+msgstr ""
+
+#: archive.php:63
+msgid "Archives"
+msgstr ""
+
+#: comments.php:35 comments.php:52
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:36 comments.php:53
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:37 comments.php:54
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:64
+msgid "Comments are closed."
+msgstr ""
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: content-page.php:15 content-single.php:18 content.php:22
+msgid "Pages:"
+msgstr ""
+
+#: content-search.php:30 content-search.php:40 content-single.php:27
+#: content-single.php:30 content.php:32 content.php:42
+#: inc/structure/template-tags.php:140 inc/structure/template-tags.php:146
+#. translators: used between list items, there is a space after the comma
+msgid ", "
+msgstr ""
+
+#: content-search.php:34 content.php:36 inc/structure/template-tags.php:142
+msgid "Posted in %1$s"
+msgstr ""
+
+#: content-search.php:44 content.php:46 inc/structure/template-tags.php:148
+msgid "Tagged %1$s"
+msgstr ""
+
+#: content-search.php:50 content.php:52 inc/structure/template-tags.php:154
+msgid "Leave a comment"
+msgstr ""
+
+#: content-search.php:50 content.php:52 inc/structure/template-tags.php:154
+msgid "1 Comment"
+msgstr ""
+
+#: content-search.php:50 content.php:52 inc/structure/template-tags.php:154
+msgid "% Comments"
+msgstr ""
+
+#: content-single.php:35
+msgid ""
+"This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" "
+"rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: content-single.php:37
+msgid "Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: content-single.php:43
+msgid ""
+"This entry was posted in %1$s and tagged %2$s. Bookmark the <a "
+"href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: content-single.php:45
+msgid ""
+"This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" "
+"rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: content.php:19
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: functions.php:68
+msgid "1 Column Wide"
+msgstr ""
+
+#: functions.php:69
+msgid "1 Column Narrow"
+msgstr ""
+
+#: functions.php:70
+msgid "2 Columns: Content / Sidebar"
+msgstr ""
+
+#: functions.php:71
+msgid "2 Columns: Sidebar / Content"
+msgstr ""
+
+#: header.php:18
+msgid "Skip to content"
+msgstr ""
+
+#: inc/adoration.php:78
+msgid ""
+"The main sidebar. It is displayed on either the left or right side of the "
+"page based on the chosen layout."
+msgstr ""
+
+#: inc/adoration.php:87
+msgid ""
+"A sidebar located in the footer of the site. Optimized for one, two, or "
+"three widgets (and multiples thereof)."
+msgstr ""
+
+#: inc/structure/template-tags.php:158
+msgid "Edit"
+msgstr ""
+
+#: inc/structure/template-tags.php:239
+msgid "Product Categories"
+msgstr ""
+
+#: inc/structure/template-tags.php:281
+msgid "Recent Products"
+msgstr ""
+
+#: inc/structure/template-tags.php:323
+msgid "Featured Products"
+msgstr ""
+
+#: inc/structure/template-tags.php:365
+msgid "Top Rated Products"
+msgstr ""
+
+#: inc/structure/template-tags.php:407
+msgid "On Sale"
+msgstr ""
+
+#: inc/woocommerce.php:104
+msgid "Reviews <span>%d</span>"
+msgstr ""
+
+#: sidebar.php:23
+msgid "Example Widget"
+msgstr ""
+
+#: sidebar.php:25
+#. Translators: The %s are placeholders for HTML, so the order can't be
+#. changed.
+msgid ""
+"This is an example widget to show how the Primary sidebar looks by default. "
+"You can add custom widgets from the %swidgets screen%s in the admin."
+msgstr ""
+
+#: templates/social-media-menu.php:58 templates/social-media-menu.php:59
+msgid "Subscribe to our Feed"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:50
+msgid "No products in the cart."
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:58
+msgid "Subtotal"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:63
+msgid "View Cart"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:64
+msgid "Checkout"
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:18
+msgid "Product"
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:19
+msgid "Total"
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:25
+msgid "Cart Subtotal"
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:79
+msgid "Order Total"
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:150
+msgid "Please fill in your details above to see available payment methods."
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:152
+msgid ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:163
+msgid ""
+"Since your browser does not support JavaScript, or it is disabled, please "
+"ensure you click the <em>Update Totals</em> button before placing your "
+"order. You may be charged more than the amount stated above if you fail to "
+"do so."
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:163
+msgid "Update totals"
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:174
+msgid ""
+"I&rsquo;ve read and accept the <a href=\"%s\" target=\"_blank\">terms &amp; "
+"conditions</a>"
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:179
+msgid "Place order"
+msgstr ""
+
+#: woocommerce/content-product.php:43
+msgid "Product categories:"
+msgstr ""
+
+#: woocommerce/single-product/review.php:28
+msgid "Rated %d out of 5"
+msgstr ""
+
+#: woocommerce/single-product/review.php:29
+msgid "out of 5"
+msgstr ""
+
+#: woocommerce/single-product/review.php:36
+msgid "Your comment is awaiting approval"
+msgstr ""
+
+#: woocommerce/single-product/review.php:44
+msgid "verified owner"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Adoration"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://wpaxl.com/themes/adoration"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "TODO: description here"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Chris Aprea"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://wpaxl.com"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Homepage"
+msgstr ""
+
+#: archive.php:30
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: archive.php:33
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: comments.php:28
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/adoration.php:61
+msgctxt "Nav menu location"
+msgid "Primary"
+msgstr ""
+
+#: inc/adoration.php:62
+msgctxt "Nav menu location"
+msgid "Social"
+msgstr ""
+
+#: inc/adoration.php:77
+msgctxt "Sidebar name"
+msgid "Primary"
+msgstr ""
+
+#: inc/adoration.php:86
+msgctxt "Sidebar name"
+msgid "Subsidiary"
+msgstr ""
+
+#: inc/customizer.php:35
+msgctxt "Label for a customizer section."
+msgid "Site Title"
+msgstr ""
+
+#: inc/customizer.php:75
+msgctxt "Color scheme label."
+msgid "Default"
+msgstr ""
+
+#: inc/customizer.php:86
+msgctxt "Color scheme label."
+msgid "Dark"
+msgstr ""
+
+#: inc/customizer.php:97
+msgctxt "Color scheme label."
+msgid "Yellow"
+msgstr ""
+
+#: inc/customizer.php:108
+msgctxt "Color scheme label."
+msgid "Pink"
+msgstr ""
+
+#: inc/customizer.php:119
+msgctxt "Color scheme label."
+msgid "Purple"
+msgstr ""
+
+#: inc/customizer.php:130
+msgctxt "Color scheme label."
+msgid "Blue"
+msgstr ""
+
+#: inc/structure/template-tags.php:33 inc/structure/template-tags.php:36
+msgctxt "Page title"
+msgid "Shop"
+msgstr ""
+
+#: inc/structure/template-tags.php:108
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/structure/template-tags.php:113
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: inc/structure/template-tags.php:472
+msgctxt "Homepage header text."
+msgid "Home"
+msgstr ""
+
+#: inc/structure/template-tags.php:495
+msgctxt "Sidebar header text."
+msgid "Extras"
+msgstr ""
+
+#: searchform.php:4 searchform.php:6
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:6
+msgctxt "placeholder"
+msgid "Search&hellip;"
+msgstr ""
+
+#: searchform.php:8
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: sidebar.php:9
+#. Translators: %s is the sidebar name. This is the sidebar title shown to
+#. screen readers.
+msgctxt "Sidebar title."
+msgid "%s Sidebar"
+msgstr ""
+
+#: templates/masthead.php:122
+msgctxt "The customers account overview page"
+msgid "My Account"
+msgstr ""
+
+#: templates/masthead.php:129
+msgctxt "Logout of your account"
+msgid "Logout"
+msgstr ""
+
+#: templates/masthead.php:160
+msgctxt "Log into your account"
+msgid "Login"
+msgstr ""
+
+#: templates/masthead.php:167
+msgctxt "Sign up for an account"
+msgid "Register"
+msgstr ""
+
+#: woocommerce/single-product/review.php:47
+msgctxt "X time ago, e.g. 2 days ago"
+msgid "%s ago"
+msgstr ""

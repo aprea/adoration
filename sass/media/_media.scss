@@ -1,0 +1,42 @@
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+p img {
+	display: block;
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin: 0 25px 25px 0;
+	position: relative;
+	top: 10px;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin: 0 0 25px 25px;
+	position: relative;
+	top: 10px;
+}
+
+.aligncenter {
+	@include center-block;
+}
+
+@import "captions";
+@import "galleries";

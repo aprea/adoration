@@ -1,0 +1,82 @@
+input, textarea, button, select {
+	font-family: $font__main;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	padding: 0; /* Addresses excess padding in IE8/9 */
+}
+
+input[type="search"] {
+	-webkit-appearance: none; /* Addresses appearance set to searchfield in S5, Chrome */
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+	border: 0;
+	padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+select,
+textarea {
+	color: $color__text-input;
+	border: 2px solid $color__border-input;
+	background-color: $color__background-input;
+	box-sizing: border-box;
+	outline: 0;
+	font-weight: 400;
+	padding: 15px 20px;
+	-webkit-appearance: none;
+	border-radius: 0;
+	@include font-size(1.8);
+}
+
+select {
+	-webkit-appearance: menulist-button;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+	color: $color__text-input-focus;
+	border: 2px solid $color__border-input-focus;
+	background-color: $color__background-input-focus;
+}
+
+input:invalid {
+	border-color: #e2401c;
+	background-color: #faf0ee;
+	color: #e2401c;
+}
+
+textarea {
+	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+	vertical-align: top; /* Improves readability and alignment in all browsers */
+	width: 100%;
+	max-width: 100%;
+}
+
+label {
+	cursor: pointer;
+}
+
+button, input[type=submit] {
+	-webkit-appearance: none;
+	border-radius: 0;
+}

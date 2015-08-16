@@ -1,0 +1,155 @@
+body.woocommerce-account #content {
+	table.shop_table.my_account_orders {
+		width: 100%;
+		margin: 0 0 65px;
+		@include font-size(2);
+
+		> thead > tr > th {
+			padding: 12px 25px;
+		}
+
+		> tbody > tr {
+			background-color: #fff;
+
+			&:nth-child(even) {
+				background-color: #fafafa;
+			}
+
+			> td {
+				color: #666;
+				vertical-align: middle;
+				padding: 25px;
+				@include font-size(2);
+
+				a {
+					color: #333;
+
+					&:hover {
+						color: $color__link;
+						border-bottom: 1px solid $color__link;
+					}
+				}
+			}
+
+			&:last-child td {
+				border-bottom: 2px solid #e5e5e5;
+			}
+		}
+
+		.order-actions a {
+			@include grey-button();
+
+			text-transform: none;
+			letter-spacing: normal;
+			padding: 15px 20px;
+			@include font-size(1.8);
+		}
+	}
+
+	h2 {
+		letter-spacing: normal;
+		font-weight: 300;
+		margin: 0 0 20px 0;
+		@include font-size(2.4);
+	}
+
+	.order-info mark {
+		padding: 2px 5px;
+		border-radius: 2px;
+	}
+
+	form {
+		display: block;
+
+		input[type="text"],
+		input[type="email"],
+		input[type="url"],
+		input[type="password"],
+		input[type="search"],
+		input[type="number"],
+		select,
+		textarea {
+			width: 100%;
+		}
+
+		p.form-row {
+			margin: 0 0 25px;
+
+			label {
+				font-weight: 400;
+				color: #777;
+				display: block;
+				margin: 0 0 7px;
+				cursor: pointer;
+				@include font-size(1.8);
+
+				&.inline {
+					display: inline;
+					margin: 0 0 0 10px;
+				}
+			}
+
+			abbr.required {
+				color: #e74c3c;
+				border: 0;
+			}
+
+			&.notes {
+				margin: 0;
+			}
+		}
+
+		/*
+		.form-row-first {
+			float: left;
+			width: 48%;
+		}
+
+		.form-row-last {
+			float: right;
+			width: 48%;
+		}
+		*/
+
+		#billing_address_1_field {
+			margin: 0 0 15px;
+		}
+
+		h3, legend {
+			font-weight: 300;
+			color: #555;
+			padding: 0 0 20px 0;
+			margin: 0 0 25px 0;
+			position: relative;
+			text-transform: none;
+			@include font-size(2.4);
+
+			&:after {
+				content: '';
+				display: block;
+				width: 39px;
+				border-bottom: 1px dotted #d9d9d9;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+			}
+		}
+
+		input[type=submit] {
+			@include black-button();
+
+			padding: 15px 30px;
+			text-transform: none;
+			letter-spacing: normal;
+			@include font-size(2);
+		}
+
+		fieldset {
+			margin: 50px 0 0 0;
+		}
+	}
+
+	.lost_reset_password #user_login {
+		width: 100%;
+	}
+}

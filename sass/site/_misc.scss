@@ -1,0 +1,153 @@
+// Homepage intro text
+.intro {
+	text-align: center;
+	width: 615px;
+	max-width: 100%;
+	@include center-block();
+
+	&:after {
+		content: '';
+		height: 2px;
+		width: 110px;
+		background-color: #d9d9d9;
+		display: block;
+		margin: 50px auto;
+	}
+
+	h2 {
+		font-weight: bold;
+		letter-spacing: -1.5px;
+		color: #333;
+		text-transform: none;
+		margin: 0 0 20px;
+		@include font-size(5);
+	}
+
+	p {
+		color: #555;
+		font-weight: 300;
+		margin: 0;
+		@include font-size(2.4);
+	}
+}
+
+// Site & product search
+.regular-search, .widget_product_search {
+	input[type="submit"] {
+		display: none;
+	}
+
+	input[type="search"] {
+		width: 100%;
+		color: #333;
+		font-weight: 400;
+		border: 1px solid #404040;
+		background-color: #fff;
+		padding: 5px 30px 5px 10px;
+		position: relative;
+		display: block;
+		line-height: 1.6;
+		@include font-size(1.6);
+
+		&:focus, &:hover {
+			border-color: $color__link;
+		}
+	}
+
+	input[type="search"]::-webkit-search-decoration,
+	input[type="search"]::-webkit-search-cancel-button,
+	input[type="search"]::-webkit-search-results-button,
+	input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+	form {
+		position: relative;
+
+		&:before {
+			content: '\f002';
+			position: absolute;
+			top: 11px;
+			right: 12px;
+			color: #333;
+			z-index: 1;
+			@include font-awesome();
+			@include font-size(1.4);
+		}
+	}
+}
+
+body.error-404 #content {
+	color: #999;
+	text-align: center;
+	@include font-size(1.8);
+
+	h1.entry-title {
+		margin: 0 0 50px;
+		position: relative;
+		@include font-size(3.4);
+
+		&:after {
+			content: '';
+			width: 36px;
+			height: 2px;
+			background-color: #d9d9d9;
+			position: absolute;
+			bottom: -20px;
+			left: 0;
+			right: 0;
+			display: block;
+			margin: auto;
+		}
+	}
+
+	.regular-search {
+		margin: 50px 0 0 0;
+
+		form.search-form {
+			&:before {
+				color: #aaa;
+				top: 23px;
+				right: 23px;
+				@include font-size(2.4);
+			}
+		}
+
+		input[type=search] {
+			border: 2px solid $color__border-input;
+			padding: 20px 60px 20px 20px;
+			@include font-size(1.8);
+
+			&:focus {
+				border: 2px solid $color__border-input-focus;
+			}
+		}
+	}
+}
+
+body.search #content {
+	.regular-search {
+		margin: 50px 0 0 0;
+
+		form.search-form {
+			&:before {
+				color: #aaa;
+				top: 23px;
+				right: 23px;
+				@include font-size(2.4);
+			}
+		}
+
+		input[type=search] {
+			border: 2px solid $color__border-input;
+			padding: 20px 60px 20px 20px;
+			@include font-size(1.8);
+
+			&:focus {
+				border: 2px solid $color__border-input-focus;
+			}
+		}
+	}
+}
+
+.sticky {
+	display: block;
+}

@@ -1,0 +1,12 @@
+#sidebar-primary {
+	padding: 50px;
+	overflow: hidden;
+
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		bottom: 0;
+	}
+}

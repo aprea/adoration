@@ -1,0 +1,36 @@
+.breadcrumb-trail {
+	margin: 0;
+	border-bottom: 1px solid #f0f0f0;
+	padding: 15px 25px;
+	display: block;
+	color: #777;
+	position: relative;
+	z-index: 10;
+	font-weight: 400;
+	@include font-size(1.4);
+
+	> *:not(.sep) {
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&.sep {
+			padding: 0;
+		}
+
+		padding: 0 5px;
+	}
+
+	a, a:visited {
+		color: #333;
+		font-weight: 400;
+
+		&:hover {
+			color: $color__link;
+		}
+	}
+
+	> * {
+		word-wrap: break-word;
+	}
+}

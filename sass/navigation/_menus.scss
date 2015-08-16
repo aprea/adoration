@@ -1,0 +1,373 @@
+#subsidiary-banner {
+	.social-toggle-button {
+		vertical-align: top;
+		margin: 8px 0 0 0;
+		width: 30px;
+		height: 30px;
+		padding: 7px 0;
+		background-color: #fff;
+		border-radius: 50%;
+		text-decoration: none;
+		position: relative;
+		display: none;
+		@include hide-text;
+		@include social-media-button( '\f064', #00AE73 );
+
+		&:before {
+			color: #fff;
+			text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+			position: absolute;
+			top: 0;
+			left: 0;
+			text-indent: 0;
+			width: 100%;
+			text-align: center;
+			@include font-awesome();
+			@include font-size(1.7);
+			line-height: 30px;
+		}
+	}
+
+	#social-toggle {
+		display: none;
+	}
+
+	#menu-social {
+		display: inline-block;
+		padding: 8px 0 0 0;
+		margin: 0;
+		vertical-align: top;
+
+		ul {
+			margin: 0;
+		}
+
+		li {
+			display: inline-block;
+			vertical-align: top;
+			margin: 0px 0px 0px 2px;
+
+			&:first-child {
+				margin: 0;
+			}
+
+			a.feed {
+				@include social-media-button( '\f09e', #f37324 );
+			}
+
+			a {
+				width: 30px;
+				height: 30px;
+				padding: 7px 0;
+				background-color: #fff;
+				border-radius: 50%;
+				display: block;
+				text-decoration: none;
+				position: relative;
+				@include hide-text;
+
+				&:before {
+					color: #fff;
+					text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+					position: absolute;
+					top: 0;
+					left: 0;
+					text-indent: 0;
+					width: 100%;
+					text-align: center;
+					@include font-awesome();
+					@include font-size(1.7);
+					line-height: 30px;
+				}
+			}
+
+			a[href*="facebook.com"] {
+				@include social-media-button( '\f09a', #3B5999 );
+			}
+
+			a[href*="plus.google.com"] {
+				@include social-media-button( '\f0d5', #DD4B39 );
+			}
+
+			a[href*="twitter.com"] {
+				@include social-media-button( '\f099', #55ACEE );
+			}
+
+			a[href*="wordpress.org"] {
+				@include social-media-button( '\f19a', #464646 );
+			}
+
+			a[href*="wordpress.com"] {
+				@include social-media-button( '\f19a', #1E8CBE );
+			}
+
+			a[href*="stumbleupon.com"] {
+				@include social-media-button( '\f1a4', #EC4B24 );
+			}
+
+			a[href*="tumblr.com"] {
+				@include social-media-button( '\f173', #35465C );
+			}
+
+			a[href*="linkedin.com"] {
+				@include social-media-button( '\f0e1', #0977B5 );
+			}
+
+			a[href*="vine.co"] {
+				@include social-media-button( '\f1ca', #00BF8F );
+			}
+
+			a[href*="pinterest.com"] {
+				@include social-media-button( '\f0d2', #CB2027 );
+			}
+
+			a[href*="slack.com"] {
+				@include social-media-button( '\f198', #4C374A );
+			}
+
+			a[href*="youtube.com"] {
+				@include social-media-button( '\f16a', #E52929 );
+			}
+
+			a[href*="github.com"] {
+				@include social-media-button( '\f09b', #444444 );
+			}
+
+			a[href*="vimeo.com"] {
+				@include social-media-button( '\f194', #1AB7EA );
+			}
+
+			a[href*="stackoverflow.com"] {
+				@include social-media-button( '\f16c', #444444 );
+			}
+
+			a[href*="stackexchange.com"] {
+				@include social-media-button( '\f18d', #195398 );
+
+				&:before {
+					@include font-size(1.6); // corrects malformed stackexchange icon at 17px
+				}
+			}
+
+			a[href*="flickr.com"] {
+				@include social-media-button( '\f16e', #0063DC );
+			}
+
+			a[href*="foursquare.com"] {
+				@include social-media-button( '\f180', #1EB2ED );
+			}
+
+			a[href*="bitbucket.org"] {
+				@include social-media-button( '\f171', #205081 );
+			}
+
+			a[href*="instagram.com"] {
+				@include social-media-button( '\f16d', #35658B );
+			}
+
+			a[href*="deviantart.com"] {
+				@include social-media-button( '\f1bd', #5D7061 );
+			}
+
+			a[href*="dribbble.com"] {
+				@include social-media-button( '\f17d', #EA4C89 );
+			}
+
+			a[href*="reddit.com"] {
+				@include social-media-button( '\f1a1', #444444 );
+			}
+
+			a[href*="jsfiddle.net"] {
+				@include social-media-button( '\f1cc', #4679BD );
+			}
+
+			a[href*="codepen.io"] {
+				@include social-media-button( '\f1cb', #444444 );
+			}
+
+			a[href*="drupal.org"] {
+				@include social-media-button( '\f1a9', #0077C0 );
+			}
+
+			a[href*="joomla.org"] {
+				@include social-media-button( '\f1aa', #444444 );
+			}
+		}
+	}
+}
+
+#menu-primary {
+	padding: 0 $masthead-horizontal-padding;
+	border-left: 1px solid $color__border-masthead;
+	display: table-cell;
+	vertical-align: middle;
+	white-space: nowrap;
+
+	ul {
+		list-style-type: none;
+	}
+
+	> ul {
+		margin: 0;
+		position: relative;
+		top: -2px;
+		line-height: 1;
+
+		> li {
+			display: inline-block;
+			margin: 0 15px 0 0;
+			position: relative;
+			line-height: 1;
+			vertical-align: top;
+
+			&:hover {
+				> ul {
+					opacity: 1;
+					visibility: visible;
+				}
+
+				> a {
+					color: $color__link-hover;
+				}
+			}
+
+			&:last-child {
+				margin: 0;
+
+				a {
+					padding: 0;
+				}
+
+				&:after {
+					display: none;
+				}
+			}
+
+			&:after {
+				content: '';
+				display: block;
+				width: 2px;
+				height: 15px;
+				background-color: #f7f7f7;
+				position: absolute;
+				top: 4px;
+				right: 0px;
+			}
+
+			&.current-menu-item > a {
+				font-weight: bold;
+			}
+
+			&.menu-item-has-children > a:after {
+				content: '';
+				width: 0;
+				height: 0;
+				border-left: 4px solid transparent;
+				border-right: 4px solid transparent;
+				border-top: 4px solid #ccc;
+				display: inline-block;
+				margin: 0 0 0 5px;
+				top: -3px;
+				position: relative;
+			}
+
+			> a {
+				color: #333;
+				text-transform: uppercase;
+				font-weight: 400;
+				letter-spacing: 0.5px;
+				padding: 0 20px 0 0;
+				@include font-size(1.5);
+
+				&:hover {
+					color: $color__link;
+				}
+			}
+
+			ul {
+				visibility: hidden;
+				opacity: 0;
+				position: absolute;
+				width: 215px;
+				background-color: #fff;
+				outline: 3px solid rgba(0,0,0,0.75);
+				left: -20px;
+				margin: 14px 0 0 0;
+				@include transition(
+					opacity 500ms ease,
+					visibility 500ms ease
+				);
+
+				&:before {
+					content: '';
+					position: absolute;
+					width: 0;
+					height: 0;
+					border-left: 6px solid transparent;
+					border-right: 6px solid transparent;
+					border-bottom: 6px solid rgba(0,0,0,0.75);
+					left: 20px;
+					top: -9px;
+				}
+
+				li {
+					position: relative;
+					margin: 0;
+
+					&:last-child a {
+						border-bottom: none;
+					}
+
+					&:hover {
+						> ul {
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+
+					&.current-menu-item > a {
+						font-weight: bold;
+					}
+				}
+
+				> li.menu-item-has-children > a:after {
+					content: '';
+					width: 0;
+					height: 0;
+					border-top: 4px solid transparent;
+					border-bottom: 4px solid transparent;
+					border-left: 4px solid #ccc;
+					margin: -4px 0 0 0;
+					position: absolute;
+					top: 50%;
+					right: 20px;
+				}
+
+				a {
+					color: #333;
+					font-weight: 400;
+					display: block;
+					padding: 15px 20px;
+					border-bottom: 1px solid #f2f2f2;
+					position: relative;
+					background-color: #fff;
+					@include font-size(1.6);
+
+					&:hover {
+						background-color: #f2f2f2;
+					}
+				}
+
+				ul {
+					margin: 0;
+					top: 0;
+					left: 215px + 9px;
+
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

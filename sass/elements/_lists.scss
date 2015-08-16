@@ -1,0 +1,27 @@
+ul, ol {
+	margin: 0 0 25px;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li {
+	margin: 0 0 7px 0;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+
+dt {
+	font-weight: bold;
+}
+
+li ol, li ul {
+	margin: 0 0 0 21px;
+}

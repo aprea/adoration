@@ -1,0 +1,105 @@
+// 2 columns, sidebar left
+.layout-2c-l {
+	#content {
+		width: 70%;
+		float: left;
+	}
+
+	#sidebar-primary {
+		width: 30%;
+		float: left;
+
+		&:before {
+			left: 70%;
+			width: 30%;
+			border-left: 1px solid #f2f2f2;
+		}
+	}
+}
+
+// 2 columns, sidebar right
+.layout-2c-r {
+	#content {
+		width: 70%;
+		float: right;
+	}
+
+	#sidebar-primary {
+		width: 30%;
+		float: left;
+
+		&:before {
+			left: 0;
+			width: 30%;
+			border-right: 1px solid #f2f2f2;
+		}
+	}
+}
+
+// 1 column narrow
+.layout-1c-narrow .site-content,
+.layout-1c-narrow #subsidiary-banner .subsidiary-banner-wrap,
+.layout-1c-narrow #header .primary-header-outer-wrap,
+.layout-1c-narrow #footer .footer-sidebar #sidebar-subsidiary,
+.layout-1c-narrow #footer .credit {
+	@include narrow-wrap();
+}
+
+.layout-1c-narrow #footer .footer-sidebar #sidebar-subsidiary {
+	padding: 50px 105px;
+}
+
+#page {
+	overflow: hidden;
+}
+
+.site-content {
+	margin: 60px 0px;
+	position: relative;
+	z-index: 2;
+	@include wrap();
+
+	.wrap {
+		background-color: #fff;
+		outline: 4px solid rgba(0,0,0,0.75);
+		padding: 7px;
+		position: relative;
+
+		&:before {
+			content: " ";
+			position: absolute;
+			top: 7px;
+			left: 7px;
+			right: 7px;
+			bottom: 7px;
+			border: 1px solid #f2f2f2;
+			z-index: 1;
+		}
+
+		.content-wrap {
+			position: relative;
+			z-index: 10;
+			overflow: hidden;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+13.2 Header
+--------------------------------------------------------------*/
+@import 'header.scss';
+
+/*--------------------------------------------------------------
+13.3 Footer
+--------------------------------------------------------------*/
+@import 'footer.scss';
+
+/*--------------------------------------------------------------
+13.4 Primary
+--------------------------------------------------------------*/
+@import 'primary.scss';
+
+/*--------------------------------------------------------------
+13.5 Secondary
+--------------------------------------------------------------*/
+@import 'secondary.scss';

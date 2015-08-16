@@ -1,0 +1,200 @@
+// Rem output with px fallback.
+@mixin font-size($sizeValue: 1.6) {
+	font-size: ($sizeValue * 10) + px;
+	font-size: $sizeValue + rem;
+}
+
+// Center block.
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix.
+@mixin clearfix() {
+	content: "";
+	display: table;
+}
+
+// Clear after (not all clearfix need this also).
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Sets the font-family to FontAwesome and sets some default font styling.
+@mixin font-awesome() {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+}
+
+// Styles the wrap container to the site's max width and centers it.
+@mixin wrap() {
+	width: $site__layout-width + 40px;
+	padding-left: $site__layout-side-margin;
+	padding-right: $site__layout-side-margin;
+	max-width: 100%;
+	@include center-block();
+}
+
+@mixin narrow-wrap() {
+	@include wrap();
+	width: $site__layout-width-narrow + 40px;
+}
+
+// Used for the social media buttons in the subsidiary banner.
+@mixin social-media-button($content, $background-color) {
+	&:before {
+		content: $content;
+	}
+
+	&:hover {
+		opacity: 0.85;
+	}
+
+	background-color: $background-color;
+}
+
+// Columns used for product listing and other listings
+@mixin adoration-columns( $cols: 3 ) {
+
+	$margin: $col-margin + '%';
+	$bot-margin: $col-bot-margin + '%';
+	$width:  ( 100 - ( $col-margin * ( $cols - 1 ) ) ) / $cols + '%';
+
+	margin-bottom: -(unquote($bot-margin));
+
+	> * {
+		&:nth-child(#{$cols}n+#{$cols}) {
+			margin-right: 0;
+		}
+
+		&:first-child, &:nth-child(#{$cols }n+1) {
+			margin-left: 0;
+		}
+
+		width:         unquote($width);
+		margin-left:   unquote($margin);
+		margin-bottom: unquote($bot-margin);
+		margin-right:  -5px;
+
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+// Prumary button style
+@mixin primary-button() {
+	border: 2px solid #000;
+	text-transform: uppercase;
+	color: #000;
+	padding: 9px 22px;
+	display: inline-block;
+	letter-spacing: 0.5px;
+	background-color: #fff;
+	font-weight: 400;
+	line-height: 1;
+	cursor: pointer;
+	text-align: center;
+	outline: 0;
+	@include font-size(1.4);
+
+	&:visited {
+		color: #000;
+	}
+
+	&:hover {
+		border: 2px solid $color__link;
+		background-color: $color__link;
+		color: #fff;
+	}
+
+	&:focus {
+		opacity: 0.7;
+	}
+}
+
+// Black variation of standard button
+@mixin black-button() {
+	@include primary-button();
+
+	color: #fff;
+	background-color: #000;
+	border-color: #000;
+
+	&:visited {
+		color: #fff;
+	}
+
+	&:hover {
+		border: 2px solid $color__link;
+		background-color: $color__link;
+		color: #fff;
+	}
+}
+
+// Black with white border variation of black button
+@mixin black-button-white-border() {
+	@include black-button();
+
+	border-color: #fff;
+}
+
+// Grey variation of standard button
+@mixin grey-button() {
+	@include primary-button();
+
+	color: #fff;
+	background-color: #333;
+	border-color: #333;
+
+	&:visited {
+		color: #fff;
+	}
+
+	&:hover {
+		border: 2px solid $color__link;
+		background-color: $color__link;
+		color: #fff;
+	}
+}
+
+// Cover the entire area using an absolutely positioned element
+@mixin absolute-cover() {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+// Responsive breakpoints
+@mixin breakpoint($point) {
+	@if $point == content-width {
+		@media (max-width: $site__layout-width + ($site__layout-side-margin * 2)) { @content ; }
+	}
+	@else if $point == content-width-narrow {
+		@media (max-width: $site__layout-width-narrow + ($site__layout-side-margin * 2)) { @content ; }
+	}
+	@else if $point == tablet {
+		@media (max-width: 1024px) { @content ; }
+	}
+	@else if $point == small-tablet {
+		@media (max-width: 720px) { @content ; }
+	}
+	@else if $point == phablet {
+		@media (max-width: 37.5em)  { @content ; }
+	}
+	@else if $point == mobile {
+		@media (max-width: 480px)  { @content ; }
+	}
+	@else if $point == small-mobile {
+		@media (max-width: 360px)  { @content ; }
+	}
+	@else {
+		@media (max-width: $point)  { @content ; }
+	}
+}

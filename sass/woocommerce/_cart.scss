@@ -1,0 +1,282 @@
+body.woocommerce-cart #content {
+	.entry-header {
+		margin: 0 0 60px;
+		color: #555;
+		line-height: 1;
+
+		.entry-title {
+			color: #555;
+			letter-spacing: -2px;
+			position: relative;
+			padding: 0 0 0 55px;
+			margin: 0;
+			line-height: 1;
+			@include font-size(5);
+
+			&:before {
+				content: '';
+				width: 35px;
+				height: 35px;
+				display: block;
+				border: 2px solid #404040;
+				border-radius: 50%;
+				position: relative;
+				margin: 0 20px 0 0;
+				position: absolute;
+				top: 11px;
+				left: 0;
+				@include font-size(1.4);
+
+			}
+
+			&:after {
+				content: '\f07a';
+				left: 11px;
+				top: 21px;
+				position: absolute;
+				@include font-size(1.4);
+				@include font-awesome();
+			}
+		}
+	}
+
+	table.shop_table.cart {
+		width: 100%;
+		margin: 0 0 65px;
+		@include font-size(2);
+
+		> thead > tr > th {
+			padding: 12px 25px;
+		}
+
+		> tbody > tr {
+			background-color: #fff;
+
+			&:nth-child(even) {
+				background-color: #fafafa;
+			}
+
+			> td {
+				color: #666;
+				vertical-align: middle;
+				padding: 25px;
+				@include font-size(2);
+
+				a {
+					color: #333;
+
+					&:hover {
+						color: $color__link;
+						border-bottom: 1px solid $color__link;
+					}
+				}
+			}
+
+			&:last-child td {
+				border-bottom: 2px solid #e5e5e5;
+			}
+		}
+
+		.product-thumbnail {
+			a {
+				overflow: hidden;
+				display: block;
+				width: 60px;
+
+				&:hover {
+					text-decoration: none;
+					border: 0;
+				}
+
+				img {
+					float: left;
+				}
+			}
+		}
+
+		.product-remove {
+			a {
+				background-color: #e74c3c;
+				width: 17px;
+				height: 17px;
+				border-radius: 50%;
+				display: block;
+				overflow: hidden;
+				line-height: 9999;
+				position: relative;
+				color: #fff;
+
+				&:before {
+					content: '\f00d';
+					position: absolute;
+					top: 2px;
+					left: 4px;
+					display: block;
+					@include font-size(1.2);
+					@include font-awesome();
+				}
+
+				&:hover {
+					background-color: $color__link;
+					color: #fff;
+				}
+			}
+		}
+
+		.product-name {
+			width: 100%;
+		}
+
+		.product-quantity {
+			.quantity {
+				width: 100px;
+			}
+
+			input[type=number] {
+				border: 2px solid $color__border-input;
+				color: #777;
+				background-color: #fff;
+				height: 55px;
+				text-align: center;
+				width: 100%;
+				position: relative;
+				padding: 0;
+				@include font-size(1.8);
+			}
+		}
+
+		.coupon {
+			float: left;
+
+			label {
+				display: none;
+			}
+
+			input[type=text] {
+				border: 2px solid $color__border-input;
+				color: #777;
+				background-color: #fff;
+				height: 55px;
+				padding: 0px 20px;
+				@include font-size(1.8);
+			}
+
+			input[type=submit], &+input[type=submit] {
+				@include grey-button();
+
+				height: 55px;
+				text-transform: none;
+				letter-spacing: normal;
+				@include font-size(1.8);
+			}
+
+			&+input[type=submit] {
+				@include grey-button();
+
+				float: right;
+				height: 55px;
+				text-transform: none;
+				letter-spacing: normal;
+				@include font-size(1.8);
+			}
+		}
+
+		table.variation {
+			p {
+				margin: 0;
+			}
+		}
+	}
+
+	.cart-collaterals {
+		width: 47%;
+		float: right;
+
+		h2 {
+			margin: 0 0 20px;
+			font-weight: 300;
+			text-transform: none;
+			color: #333;
+			@include font-size(2.4);
+		}
+
+		table {
+			border-top: 3px solid #404040;
+			width: 100%;
+			color: #555;
+			margin: 0 0 50px;
+			@include font-size(1.8);
+
+			tr td {
+				background-color: #f7f7f7;
+			}
+
+			tr th, tr td {
+				border-bottom: 1px solid #eaeaea;
+				padding: 10px 15px;
+
+				p {
+					margin: 0;
+				}
+			}
+
+			.order-total strong {
+				font-weight: 400;
+				color: #000;
+			}
+
+			.shipping-calculator-button {
+				@include grey-button();
+				text-transform: none;
+
+				margin: 7px 0;
+			}
+
+			p.form-row {
+				margin: 0 0 7px;
+			}
+
+			select, input[type=text] {
+				width: 100%;
+				border: 2px solid #ccc;
+				padding: 5px 10px;
+				background-color: #fff;
+				color: #555;
+			}
+
+			button[type=submit] {
+				@include grey-button();
+				text-transform: none;
+			}
+		}
+
+		.wc-proceed-to-checkout a {
+			@include black-button();
+
+			padding: 16px 22px;
+			text-transform: none;
+			letter-spacing: normal;
+			width: 100%;
+			@include font-size(2);
+
+			&:after {
+				content: '\f061';
+				padding: 0 0 0 15px;
+				@include font-awesome();
+			}
+		}
+	}
+
+	.cross-sells {
+		float: left;
+		width: 47%;
+
+		h2 {
+			margin: 0 0 20px;
+			font-weight: 300;
+			text-transform: none;
+			color: #333;
+			@include font-size(2.4);
+		}
+	}
+}
