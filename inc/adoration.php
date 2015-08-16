@@ -187,8 +187,6 @@ function adoration_register_styles() {
  */
 function adoration_breadcrumbs() {
 
-	$i = 0;
-
 	// Attempt to use WordPress SEO's breadcrumb function
 	if ( function_exists( 'yoast_breadcrumb' ) ) {
 		$options = get_option( 'wpseo_internallinks' );
