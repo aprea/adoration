@@ -778,6 +778,7 @@ function adoration_no_featured_image() {
  * @since  1.0.0
  */
 function adoration_archive_content() {
+	//return;
 	global $wp_query;
 
 	// Allow developers to short-circuit this function.
@@ -797,7 +798,7 @@ function adoration_archive_content() {
 	<?php endif; ?>
 
 	<article <?php hybrid_attr( 'post' ); ?>>
-		<?php $result = get_the_image(
+		<?php get_the_image(
 			array(
 				'size'         => $thumb_size,
 				'link_to_post' => false,

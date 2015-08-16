@@ -109,6 +109,8 @@ function adoration_get_all_image_sizes() {
 
 	$default_image_sizes = array( 'thumbnail', 'medium', 'large' );
 
+	$image_sizes = array();
+
 	foreach ( $default_image_sizes as $size ) {
 		$image_sizes[$size]['width']  = intval( get_option( "{$size}_size_w") );
 		$image_sizes[$size]['height'] = intval( get_option( "{$size}_size_h") );

@@ -79,7 +79,7 @@ function adoration_comments_list() {
 		'end-callback' => 'hybrid_comments_end_callback'
 	);
 
-	$comment_list_args = apply_filters( 'adoration_comments_list_args', $args ); ?>
+	$args = apply_filters( 'adoration_comments_list_args', $args ); ?>
 
 	<ol class="comment-list">
 		<?php wp_list_comments( $args ); ?>
